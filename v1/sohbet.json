@@ -1,0 +1,16 @@
+{
+  "api_name": "Herblox Arkadaşlar Arası Chat APİ",
+  "inbox_owner": "Herblox",
+  "settings": {
+    "allow_strangers": false,
+    "notifications_enabled": true
+  },
+  "recent_private_messages": [
+    {
+      "from": "Luahbo",
+      "text": "Batu, yeni metro istasyonu efsane olmuş!",
+      "time": "19:30",
+      "read": false
+    }
+  ]
+}
