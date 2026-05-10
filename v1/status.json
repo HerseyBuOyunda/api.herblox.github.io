@@ -1,0 +1,45 @@
+{
+  "system_info": {
+    "name": "Herblox API",
+    "owner": "Herşey Bu Oyunda",
+    "version": "1.0.0-Beta",
+    "last_update": "2026-05-10T17:55:00Z"
+  },
+  "overall_status": {
+    "code": 200,
+    "message": "All systems operational",
+    "color": "#107c10"
+  },
+  "services": {
+    "dashboard": {
+      "name": "herblox.com",
+      "status": "online",
+      "latency": "24ms"
+    },
+    "api_gateway": {
+      "name": "api.herblox.com",
+      "status": "online",
+      "latency": "12ms"
+    },
+    "management_panel": {
+      "name": "yonet.herblox.com",
+      "status": "online",
+      "latency": "31ms"
+    },
+    "developer_portal": {
+      "name": "dev.herblox.com",
+      "status": "online",
+      "latency": "18ms"
+    },
+    "status_page": {
+      "name": "durum.herblox.com",
+      "status": "online",
+      "latency": "10ms"
+    }
+  },
+  "incidents": [],
+  "maintenance": {
+    "is_active": false,
+    "next_scheduled": "none"
+  }
+}
