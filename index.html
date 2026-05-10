@@ -1,142 +1,162 @@
-<style>
-    :root {
-        --xbox-green: #107c10;
-        --xbox-dark: #1a1a1a;
-        --xbox-card: #2d2d2d;
-    }
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herblox API - Developer Portal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --xbox-green: #107c10;
+            --bg-dark: #050505;
+            --card-bg: #121212;
+            --text-main: #ffffff;
+            --text-dim: #a0a0a0;
+        }
 
-    body {
-        background-color: #0a0a0a;
-        color: white;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        margin: 0;
-        overflow: hidden; /* Tam ekran konsol hissi */
-    }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            margin: 0;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
 
-    /* Arka Plandaki Hafif Parıltı */
-    .bg-glow {
-        position: fixed;
-        top: -50%; left: -50%;
-        width: 200%; height: 200%;
-        background: radial-gradient(circle, rgba(16,124,16,0.1) 0%, rgba(0,0,0,0) 70%);
-        z-index: -1;
-    }
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
 
-    /* Üst Menü */
-    .navbar {
-        display: flex;
-        padding: 20px 50px;
-        gap: 30px;
-        font-size: 14px;
-        font-weight: 600;
-        color: #888;
-    }
+        .header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            letter-spacing: -1px;
+        }
 
-    .nav-item.active {
-        color: white;
-        border-bottom: 3px solid var(--xbox-green);
-        padding-bottom: 5px;
-    }
+        .header p {
+            color: var(--xbox-green);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
 
-    /* Ana Panel Layout */
-    .container {
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-        grid-template-rows: auto auto;
-        gap: 20px;
-        padding: 0 50px;
-    }
+        .api-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            width: 100%;
+            max-width: 1200px;
+        }
 
-    /* Xbox Kart Tasarımı */
-    .card {
-        background: var(--xbox-card);
-        border: 2px solid transparent;
-        border-radius: 4px;
-        padding: 20px;
-        transition: 0.2s ease;
-        position: relative;
-    }
+        .api-card {
+            background: var(--card-bg);
+            border: 2px solid transparent;
+            padding: 25px;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            text-decoration: none;
+            color: inherit;
+        }
 
-    .card:hover {
-        transform: scale(1.02);
-        border-color: white;
-        box-shadow: 0 0 20px rgba(255,255,255,0.2);
-    }
+        .api-card:hover {
+            border-color: var(--xbox-green);
+            transform: translateY(-5px);
+            background: #1a1a1a;
+        }
 
-    /* Sol Büyük Kart (İndirme Alanı) */
-    .hero-card {
-        grid-row: span 2;
-        background: linear-gradient(45deg, #1a1a1a, #2d2d2d);
-        min-height: 400px;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-    }
+        .api-card h3 {
+            margin: 0 0 10px 0;
+            color: var(--xbox-green);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
 
-    /* Sistem Durumu Kartı (Karakterin Olduğu Yer) */
-    .status-card {
-        background: #107c10;
-        text-align: center;
-    }
+        .api-card p {
+            font-size: 0.9rem;
+            color: var(--text-dim);
+            line-height: 1.5;
+        }
 
-    .status-img {
-        width: 150px;
-        margin-bottom: 10px;
-    }
+        .status-dot {
+            height: 10px;
+            width: 10px;
+            background-color: var(--xbox-green);
+            border-radius: 50%;
+            display: inline-block;
+        }
 
-    /* Butonlar */
-    .xbox-btn {
-        background: #333;
-        color: white;
-        border: none;
-        padding: 12px 25px;
-        margin: 5px;
-        font-weight: bold;
-        cursor: pointer;
-        display: inline-flex;
-        align-items: center;
-        gap: 10px;
-    }
+        .version-badge {
+            font-size: 0.7rem;
+            background: #333;
+            padding: 3px 8px;
+            border-radius: 4px;
+            margin-left: 10px;
+        }
 
-    .xbox-btn:hover { background: var(--xbox-green); }
+        .footer {
+            margin-top: 60px;
+            color: var(--text-dim);
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+<body>
 
-</style>
-
-<div class="bg-glow"></div>
-
-<nav class="navbar">
-    <div class="nav-item active">ANA SAYFA</div>
-    <div class="nav-item">MAĞAZA</div>
-    <div class="nav-item">AYARLAR</div>
-</nav>
-
-<div class="container">
-    <div class="card hero-card">
-        <h1>Herblox Studio</h1>
-        <p>Geleceğin oyun motoru sistemine hoş geldin.</p>
-        <div>
-            <button class="xbox-btn" onclick="playSelect()">📥 Windows İndir</button>
-            <button class="xbox-btn" onclick="playSelect()">📱 Android İndir</button>
-        </div>
+    <div class="header">
+        <h1>HERBLOX API</h1>
+        <p>V1 - Ecosystem Framework</p>
     </div>
 
-    <div class="card status-card">
-        <img src="Dorulanmış.png" class="status-img">
-        <h3>Sistem Doğrulandı</h3>
-        <p>Cihazın Herblox için hazır!</p>
+    <div class="api-grid">
+        <a href="/v1/status.json" class="api-card">
+            <h3>Sistem Durumu <span class="status-dot"></span></h3>
+            <p>Platformun genel sağlık durumu ve gecikme verileri.</p>
+        </a>
+
+        <a href="/v1/avatar.json" class="api-card">
+            <h3>Avatar Engine <span class="version-badge">v1.0</span></h3>
+            <p>Kullanıcı envanteri, kıyafetler ve karakter hiyerarşisi.</p>
+        </a>
+
+        <a href="/v1/herbux.json" class="api-card">
+            <h3>Economy (HB)</h3>
+            <p>HerBux cüzdan işlemleri ve bakiye sorgulama servisleri.</p>
+        </a>
+
+        <a href="/v1/oyunlar.json" class="api-card">
+            <h3>Oyun Keşfi</h3>
+            <p>Luahbo motoru ile çalışan oyunların ve sunucuların listesi.</p>
+        </a>
+
+        <a href="/v1/arkadaslar.json" class="api-card">
+            <h3>Sosyal Ağ</h3>
+            <p>Arkadaşlık listesi, istekler ve anlık konum bilgisi.</p>
+        </a>
+
+        <a href="/v1/sohbet.json" class="api-card">
+            <h3>Sohbet API</h3>
+            <p>Arkadaşlar arası özel mesajlaşma ve bildirim sistemi.</p>
+        </a>
+
+        <a href="/v1/seslichat.json" class="api-card">
+            <h3>Sesli İletişim</h3>
+            <p>Telsiz ve lobi kanalları için VoIP yapılandırması.</p>
+        </a>
+
+        <a href="/v1/youtube.json" class="api-card">
+            <h3>Medya / YouTube</h3>
+            <p>Tanıtım videoları ve topluluk medya içerikleri.</p>
+        </a>
     </div>
 
-    <div class="card">
-        <h4>Hızlı Erişim</h4>
-        <div style="font-size: 12px; color: #bbb;">
-            🚇 Metro Test Sürüşü<br>
-            🏗️ Asansör Mantık Testi
-        </div>
+    <div class="footer">
+        © 2026 Herşey Bu Oyunda. Herblox'Un Tüm Hakkları Herşey Bu Oyunda'Ya Aittir.
     </div>
-</div>
 
-<script>
-    function playSelect() {
-        new Audio('SeçSesi.mp3').play();
-    }
-</script>
+</body>
+</html>
