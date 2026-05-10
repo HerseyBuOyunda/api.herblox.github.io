@@ -1,0 +1,12 @@
+{
+  "api_name": "Herblox YouTube Gateway",
+  "featured_video": {
+    "title": "Herblox Studio v2.1 Tanıtım",
+    "video_id": "YOUR_YOUTUBE_ID",
+    "status": "active"
+  },
+  "endpoints": {
+    "status": "https://api.herblox.com/v1/status.json",
+    "updates": "https://api.herblox.com/v1/updates.json"
+  }
+}
