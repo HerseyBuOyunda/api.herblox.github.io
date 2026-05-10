@@ -1,0 +1,16 @@
+{
+  "username": "Herblox",
+  "display_name": "Herblox Founder",
+  "assets": {
+    "head": "Default",
+    "torso": "Herblox_Hoodie",
+    "accessory": "Xbox_Classic_Cap"
+  },
+  "badges": [
+    {
+      "name": "Verified",
+      "image": "https://api.herblox.com/assets/icons/Dorulanmış.png"
+    }
+  ],
+  "is_online": true
+}
