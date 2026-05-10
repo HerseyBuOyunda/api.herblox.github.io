@@ -1,6 +1,6 @@
 {
   "api_name": "Herblox Durumu",
-  "last_updated": "2026-05-10T22:00:00Z",
+  "last_updated": "2026-05-10T22:30:00Z",
   "overall_status": "Operational",
   "platforms": {
     "herblox_player": {
@@ -10,34 +10,54 @@
       },
       "console": {
         "xbox_store": { "status": "Online", "version": "2.0.5" },
-        "playstation_store": { "status": "Maintenance", "version": "2.0.4" }
-      },
-      "pc": {
-        "microsoft_store": { "status": "Online", "version": "2.1.0" }
+        "playstation_store": { "status": "Bakımda", "version": "2.0.4" }
       },
       "linux_packages": {
         "aur": { "status": "Stable", "version": "2.1.0-1" },
-        "flatpak": { "status": "Stable", "version": "2.1.0" },
-        "snap": { "status": "Stable", "version": "2.0.9" },
-        "appimage": { "status": "Stable", "version": "2.1.0" }
+        "flatpak": { "status": "Stable", "version": "2.1.0" }
       }
     },
     "herblox_studio": {
-      "windows": { "status": "Stable", "version": "3.0.2" },
-      "linux": { "status": "Stable", "version": "3.0.2" },
-      "macos": { "status": "Stable", "version": "3.0.2" }
+      "windows": "Stable",
+      "linux": "Stable",
+      "macos": "Stable"
     },
-    "herblox_kurucu": {
-      "windows": { "status": "Online", "version": "1.8.5" },
-      "linux": { "status": "Online", "version": "1.8.5" },
-      "macos": { "status": "Online", "version": "1.8.5" }
+    "herblox_launcher": {
+      "windows": "Online",
+      "linux": "Online",
+      "macos": "Online"
     }
   },
-  "services": {
-    "luahbo_engine": "Active",
-    "multiplayer_servers": "Online",
-    "economy_api": "Operational",
-    "voice_chat": "Operational"
-  },
-  "maintenance_notes": "PlayStation Store entegrasyonu güncelleme nedeniyle kısa süreliğine bakımdadır."
+  "incident_history_30_days": [
+    {
+      "date": "2026-05-10",
+      "event": "PlayStation Store Entegrasyonu",
+      "status": "Devam Ediyor",
+      "description": "Yeni API protokolleri nedeniyle PS Store sürümü kısa süreli bakıma alındı."
+    },
+    {
+      "date": "2026-05-08",
+      "event": "Luahbo 2.0 Hiyerarşi Güncellemesi",
+      "status": "Tamamlandı",
+      "description": "Blok > Ekran UI > Yazı Label sistemine geçiş yapıldı. Tüm sunucular optimize edildi."
+    },
+    {
+      "date": "2026-05-02",
+      "event": "HerBux Cüzdan Senkronizasyonu",
+      "status": "Çözüldü",
+      "description": "Veritabanı bakımı sırasında yaşanan 15 dakikalık bakiye gecikmesi düzeltildi."
+    },
+    {
+      "date": "2026-04-25",
+      "event": "Linux AUR Paketi Yayını",
+      "status": "Tamamlandı",
+      "description": "Herblox Player artık AUR üzerinden 'yay -S herblox-player' komutuyla indirilebilir."
+    },
+    {
+      "date": "2026-04-15",
+      "event": "Bilets -> HerBux Dönüştürücü",
+      "status": "Tamamlandı",
+      "description": "20 Bilet = 1 HerBux değişim sistemi API altyapısına eklendi."
+    }
+  ]
 }
