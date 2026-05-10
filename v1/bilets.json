@@ -1,0 +1,14 @@
+{
+  "api_name": "Herblox Bilets APİ",
+  "conversion_rules": {
+    "can_convert": true,
+    "rate": "20 Bilets = 1 HerBux",
+    "min_conversion_amount": 100
+  },
+  "user_data": {
+    "username": "Herblox",
+    "bilets_balance": 450,
+    "daily_streak": 5,
+    "last_claim": "2026-05-10"
+  }
+}
