@@ -1,0 +1,21 @@
+{
+  "api_name": "Herblox Chat Service",
+  "settings": {
+    "filter_enabled": true,
+    "max_message_length": 200,
+    "slow_mode_seconds": 2
+  },
+  "servers": {
+    "SVR_001": {
+      "name": "Herblox Metro Hattı",
+      "status": "active",
+      "recent_messages": []
+    },
+    "SVR_002": {
+      "name": "Avatar Mağazası",
+      "status": "active",
+      "recent_messages": []
+    }
+  },
+  "banned_words": ["küfür1", "reklam1", "spam"]
+}
