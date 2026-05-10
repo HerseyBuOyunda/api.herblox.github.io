@@ -1,0 +1,23 @@
+{
+  "api_name": "Herblox Arkadaşlar APİ",
+  "user": "Herblox",
+  "stats": {
+    "total_friends": 150,
+    "max_slots": 200,
+    "pending_requests": 3
+  },
+  "friend_list": [
+    {
+      "username": "Luahbo",
+      "status": "Online",
+      "location": "Herblox Metro Hattı",
+      "can_join": true
+    },
+    {
+      "username": "Herşey_Bu_Oyunda",
+      "status": "Offline",
+      "last_online": "2 saat önce",
+      "can_join": false
+    }
+  ]
+}
