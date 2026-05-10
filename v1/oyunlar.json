@@ -1,0 +1,46 @@
+{
+  "api_name": "Herblox Oyunlar API & Luahbo API",
+  "version": "2.0.0-Hierarchy",
+  "engine_details": {
+    "language": "Luahbo",
+    "hierarchy_support": true,
+    "error_logging": "Active",
+    "syntax_rule": "Object > Child > Property"
+  },
+  "global_stats": {
+    "total_active_players": 158,
+    "total_games_online": 3
+  },
+  "games": [
+    {
+      "game_id": "O001",
+      "title": "Herblox Metro Hattı",
+      "creator": "Herblox",
+      "status": "Online",
+      "playing": 85,
+      "thumbnail": "https://api.herblox.com/assets/games/metro.png",
+      "engine_ver": "Luahbo 2.0",
+      "server_type": "Multiplayer"
+    },
+    {
+      "game_id": "O002",
+      "title": "Avatar Editörü Dünyası",
+      "creator": "Herblox Gurbu",
+      "status": "Bakımda",
+      "playing": 0,
+      "thumbnail": "https://api.herblox.com/assets/games/avatar_world.png",
+      "engine_ver": "Luahbo 2.0",
+      "server_type": "Social"
+    },
+    {
+      "game_id": "O003",
+      "title": "Luahbo Test Sahası",
+      "creator": "Luahbo",
+      "status": "Online",
+      "playing": 12,
+      "description": "Blok hiyerarşisi ve UI test alanı.",
+      "engine_ver": "Luahbo 2.0",
+      "server_type": "Development"
+    }
+  ]
+}
