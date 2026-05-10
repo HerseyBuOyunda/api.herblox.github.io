@@ -1,45 +1,43 @@
 {
-  "system_info": {
-    "name": "Herblox API",
-    "owner": "Herşey Bu Oyunda",
-    "version": "1.0.0-Beta",
-    "last_update": "2026-05-10T17:55:00Z"
-  },
-  "overall_status": {
-    "code": 200,
-    "message": "All systems operational",
-    "color": "#107c10"
-  },
-  "services": {
-    "dashboard": {
-      "name": "herblox.com",
-      "status": "online",
-      "latency": "24ms"
+  "api_name": "Herblox Global Network Status",
+  "last_updated": "2026-05-10T22:00:00Z",
+  "overall_status": "Operational",
+  "platforms": {
+    "herblox_player": {
+      "mobile": {
+        "google_play": { "status": "Online", "version": "2.1.0" },
+        "app_store": { "status": "Online", "version": "2.1.0" }
+      },
+      "console": {
+        "xbox_store": { "status": "Online", "version": "2.0.5" },
+        "playstation_store": { "status": "Maintenance", "version": "2.0.4" }
+      },
+      "pc": {
+        "microsoft_store": { "status": "Online", "version": "2.1.0" }
+      },
+      "linux_packages": {
+        "aur": { "status": "Stable", "version": "2.1.0-1" },
+        "flatpak": { "status": "Stable", "version": "2.1.0" },
+        "snap": { "status": "Stable", "version": "2.0.9" },
+        "appimage": { "status": "Stable", "version": "2.1.0" }
+      }
     },
-    "api_gateway": {
-      "name": "api.herblox.com",
-      "status": "online",
-      "latency": "12ms"
+    "herblox_studio": {
+      "windows": { "status": "Stable", "version": "3.0.2" },
+      "linux": { "status": "Stable", "version": "3.0.2" },
+      "macos": { "status": "Stable", "version": "3.0.2" }
     },
-    "management_panel": {
-      "name": "yonet.herblox.com",
-      "status": "online",
-      "latency": "31ms"
-    },
-    "developer_portal": {
-      "name": "dev.herblox.com",
-      "status": "online",
-      "latency": "18ms"
-    },
-    "status_page": {
-      "name": "durum.herblox.com",
-      "status": "online",
-      "latency": "10ms"
+    "herblox_kurucu": {
+      "windows": { "status": "Online", "version": "1.8.5" },
+      "linux": { "status": "Online", "version": "1.8.5" },
+      "macos": { "status": "Online", "version": "1.8.5" }
     }
   },
-  "incidents": [],
-  "maintenance": {
-    "is_active": false,
-    "next_scheduled": "none"
-  }
+  "services": {
+    "luahbo_engine": "Active",
+    "multiplayer_servers": "Online",
+    "economy_api": "Operational",
+    "voice_chat": "Operational"
+  },
+  "maintenance_notes": "PlayStation Store entegrasyonu güncelleme nedeniyle kısa süreliğine bakımdadır."
 }
