@@ -1,0 +1,20 @@
+{
+  "api_name": "Herblox Sesli Chat APİ",
+  "global_voice_status": "Operational",
+  "settings": {
+    "spatial_voice": true,
+    "codec": "Opus_Herblox"
+  },
+  "active_channels": [
+    {
+      "channel_id": "CH_LOBY",
+      "name": "Ana Lobi",
+      "current_users": 15
+    },
+    {
+      "channel_id": "CH_METRO",
+      "name": "Metro Hattı Telsiz",
+      "current_users": 2
+    }
+  ]
+}
