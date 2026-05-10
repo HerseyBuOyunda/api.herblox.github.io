@@ -1,0 +1,14 @@
+{
+  "api_name": "HerBux APİ",
+  "currency_info": {
+    "name": "HerBux",
+    "symbol": "HB",
+    "icon": "https://api.herblox.com/assets/icons/HerBux.png"
+  },
+  "user_wallet": {
+    "username": "Herblox",
+    "balance": 5000,
+    "membership": "Founder",
+    "last_update": "2026-05-10T19:30:00Z"
+  }
+}
