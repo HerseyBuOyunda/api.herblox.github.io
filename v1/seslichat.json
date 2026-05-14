@@ -1,20 +1,20 @@
 {
-  "api_name": "Herblox Sesli Chat APİ",
-  "global_voice_status": "Operational",
+  "api_name": "Herblox Sesli Chat API",
+  "api_version": "2.1.0",
   "settings": {
-    "spatial_voice": true,
-    "codec": "Opus_Herblox"
+    "instance_type": "per_server",
+    "max_instances_per_server": 1,
+    "spatial_audio": true,
+    "noise_suppression": true
   },
-  "active_channels": [
-    {
-      "channel_id": "CH_LOBY",
-      "name": "Ana Lobi",
-      "current_users": 15
-    },
-    {
-      "channel_id": "CH_METRO",
-      "name": "Metro Hattı Telsiz",
-      "current_users": 2
-    }
-  ]
+  "server_status": {
+    "is_active": true,
+    "current_instance_id": "HBX-SRV-001",
+    "last_sync": "2026-05-15T00:30:00Z"
+  },
+  "visuals": {
+    "loading_texture": "darkLoadingTexture.png",
+    "spinner_icon": "DarkThemeLoadingCircle.png",
+    "rotation_speed": 1.5
+  }
 }
