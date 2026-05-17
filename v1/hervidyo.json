@@ -1,0 +1,42 @@
+{
+  "api_name": "HerVidyo Video Streaming & VOD API",
+  "api_version": "1.0.0",
+  "last_updated": "2026-05-17T19:50:00Z",
+  "settings": {
+    "max_upload_size_mb": 100,
+    "allowed_formats": [".mp4", ".mov", ".webm"],
+    "player_autoplay": false
+  },
+  "videos": [
+    {
+      "video_id": "vid_001",
+      "title": "Herblox Tanıtım Videosu 2026",
+      "uploader": "HerbloxOfficial",
+      "duration_seconds": 120,
+      "thumbnail_url": "https://gorseller.hblx.github.io/assets/hervidyo/thumbs/promo.png",
+      "video_sources": {
+        "main_source": "https://video.roblox.com/v1/asset_id_999.mp4",
+        "fallback_cdn": "https://gorseller.hblx.github.io/assets/hervidyo/streams/promo.mp4"
+      },
+      "stats": {
+        "views": 15420,
+        "likes": 890
+      }
+    },
+    {
+      "video_id": "vid_002",
+      "title": "Tren Sinyalizasyon Sistemi Rehberi",
+      "uploader": "BatuDev",
+      "duration_seconds": 450,
+      "thumbnail_url": "https://gorseller.hblx.github.io/assets/hervidyo/thumbs/train_tutorial.png",
+      "video_sources": {
+        "main_source": "https://video.roblox.com/v1/asset_id_888.mp4",
+        "fallback_cdn": "https://gorseller.hblx.github.io/assets/hervidyo/streams/train_tutorial.png"
+      },
+      "stats": {
+        "views": 3210,
+        "likes": 412
+      }
+    }
+  ]
+}
