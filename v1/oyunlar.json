@@ -11,6 +11,20 @@
     "total_active_players": 158,
     "total_games_online": 3
   },
+  "localization": {
+    "languages": {
+      "en-us": {
+        "status_online": "Online",
+        "status_maintenance": "Maintenance",
+        "playing_text": "playing"
+      },
+      "tr-tr": {
+        "status_online": "Çevrimiçi",
+        "status_maintenance": "Bakımda",
+        "playing_text": "kişi oynuyor"
+      }
+    }
+  },
   "games": [
     {
       "game_id": "O001",
@@ -19,6 +33,7 @@
       "status": "Online",
       "playing": 85,
       "thumbnail": "https://api.herblox.com/assets/games/metro.png",
+      "thumbnail_fallback": "https://gorseller.hblx.github.io/assets/games/metro.png",
       "engine_ver": "Luahbo 2.0",
       "server_type": "Multiplayer"
     },
@@ -29,6 +44,7 @@
       "status": "Bakımda",
       "playing": 0,
       "thumbnail": "https://api.herblox.com/assets/games/avatar_world.png",
+      "thumbnail_fallback": "https://gorseller.hblx.github.io/assets/games/avatar_world.png",
       "engine_ver": "Luahbo 2.0",
       "server_type": "Social"
     },
@@ -39,6 +55,8 @@
       "status": "Online",
       "playing": 12,
       "description": "Blok hiyerarşisi ve UI test alanı.",
+      "thumbnail": "https://api.herblox.com/assets/games/test_field.png",
+      "thumbnail_fallback": "https://gorseller.hblx.github.io/assets/games/test_field.png",
       "engine_ver": "Luahbo 2.0",
       "server_type": "Development"
     }
